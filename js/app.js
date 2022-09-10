@@ -9,6 +9,7 @@ const game = () => {
     const introScreen = document.querySelector(".intro");
     const match = document.querySelector(".match");
     const hands = document.querySelectorAll(".hands img");
+    const score = document.querySelector(".score");
 
     hands.forEach((hand) => {
       hand.addEventListener("animationend", function () {
@@ -19,6 +20,7 @@ const game = () => {
     playBtn.addEventListener("click", () => {
       introScreen.classList.add("fadeOut");
       match.classList.add("fadeIn");
+      score.classList.add("fadeIn");
     });
   };
 
