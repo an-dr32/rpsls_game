@@ -73,6 +73,16 @@ section {
   cursor: pointer;
 }
 
+.intro button:hover,
+.match button:hover {
+  color: var(--altbtn);
+}
+
+.intro button:active,
+.match button:active {
+  background-color: var(--altbtn);
+}
+
 .intro a {
   display: flex;
   align-items: center;
@@ -98,6 +108,15 @@ section {
   transition: opacity 0.5s ease 0.5s;
 }
 
+.match h3 {
+  color: var(--textc);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--textc);
+}
+
 .winner {
   color: var(--textc);
   text-align: center;
@@ -112,7 +131,8 @@ section {
 }
 
 .player-hand,
-.computer-hand {
+.computer-hand,
+.secondp-hand {
   width: 16rem;
 }
 
